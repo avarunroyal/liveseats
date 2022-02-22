@@ -1,0 +1,33 @@
+BUILDING_ID FLOOR_ID SEAT_ID OCCUPANCY
+1            1         L1     EMPTY
+1            1         L2     EMPTY
+1            1         L3     EMPTY
+1            1         L4     EMPTY
+
+#####################################
+SCRIPT
+#####################################
+
+create database liveseats;
+
+use liveseats;
+
+create table live_seats(
+   building_id INT NOT NULL,
+   floor_id INT NOT NULL,
+   seat_id VARCHAR(100) NOT NULL,
+   occupancy_status VARCHAR(100) NOT NULL,
+   PRIMARY KEY ( building_id, floor_id, seat_id )
+);
+
+INSERT INTO 
+	live_seats(building_id, floor_id, seat_id, occupancy_status)
+VALUES
+	('1','1','L1','EMPTY'),
+	('1','1','L2','EMPTY'),
+	('1','1','L3','EMPTY'),
+	('1','1','L4','EMPTY');
+    
+select * from live_seats;
+
+
