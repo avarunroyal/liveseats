@@ -1,5 +1,5 @@
 # liveseats
-Simple liveseats microservice which does liveSeats status update operations connecting to MYSQL/Kafka docker container
+Simple liveseats microservice which does liveSeats status update operations connecting to MYSQL/Kafka docker containers
 
 # RUN mysql as docker container - here just use docker-compose for both mysql&kafka
 https://hub.docker.com/_/mysql
