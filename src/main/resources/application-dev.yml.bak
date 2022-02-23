@@ -11,8 +11,7 @@ spring:
      driver-class-name: com.mysql.cj.jdbc.Driver
   kafka:
     #bootstrap-servers: localhost:29092
-    #bootstrap-servers: localhost:29092,localhost:39092
-    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}:9092
     consumer:
       auto-offset-reset: earliest
       group-id: liveseats
