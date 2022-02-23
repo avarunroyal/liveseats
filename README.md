@@ -3,7 +3,7 @@ Simple liveseats microservice which does liveSeats status update operations conn
 
 # RUN mysql as docker container - here just use docker-compose for both mysql&kafka
 https://hub.docker.com/_/mysql
-<br />$ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=D@tabase123 -e MYSQL_DATABASE=liveseats -e MYSQL_USER=varun -e MYSQL_PASSWORD=D@tabase123 --name=mysql mysql:8.0.27
+<br />$ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=D@tabase123 -e MYSQL_DATABASE=liveseats -e MYSQL_USER=varun -e MYSQL_PASSWORD=D@tabase123 --name=mysql mysql:8.0.28
 
 # RUN kafka as docker container
 https://www.baeldung.com/ops/kafka-docker-setup
