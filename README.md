@@ -33,5 +33,7 @@ execute insert query to add data to table.
 # EXECUTE Read/Update operations on postman
 http://localhost:8080/liveSeatsStatus (GET/PUT)
 
+# Swagger
+http://localhost:8080/swagger-ui.html
 
 
